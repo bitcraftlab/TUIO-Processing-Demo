@@ -4,10 +4,11 @@ Capture cam;
 
 void setupVideo() {
   
+    // if you have several cameras, select your resolution, name and framerate from the list!
     // println(Capture.list());
+    // cam = new Capture(this, 1280, 720, "Microsoft® LifeCam Cinema(TM)", 30);
     
-    // select your resolution, name and framerate from the list
-    cam = new Capture(this, 1280, 720, "Microsoft® LifeCam Cinema(TM)", 30);
+    cam = new Capture(this);
     cam.start();
     
 }

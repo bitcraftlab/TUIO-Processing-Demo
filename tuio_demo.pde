@@ -7,7 +7,6 @@
 import TUIO.*;
 TuioProcessing tuioClient;
 
-
 PFont font;
 
 void setup() {
@@ -43,14 +42,14 @@ void draw() {
 }
 
 void keyPressed() {
-  // saveFrame("screenshot.png"); 
+  saveFrame("screenshot.png"); 
 }
 
 
-void refresh(TuioTime frameTime) {
+void refresh(TuioTime t) {
   println(
     "frame", 
-    "#" + frameTime.getFrameID(), 
-    " (" + frameTime.getTotalMilliseconds() + ")"
+    "#" + t.getFrameID(), 
+    " (" + t.getTotalMilliseconds() + ")"
   );
 }
